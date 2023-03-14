@@ -6,7 +6,7 @@ const Contactus = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("YOUR_SERVICE_id", "YOUR_TEMPLATE_id", form.current, "YOUR_PUBLIC_key").then(
+    emailjs.sendForm("service.id", "template_id", form.current, "public_key").then(
       (result) => {
         console.log(result.text);
       },
